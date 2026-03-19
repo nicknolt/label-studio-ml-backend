@@ -132,3 +132,4 @@ dmypy.json
 .github/actions-hub
 
 .idea/
+/label_studio_ml/examples/yolo/models/fiber/best.pt
