@@ -105,6 +105,8 @@ class ControlModel(BaseModel):
             or MODEL_SCORE_THRESHOLD
         )
         # read `model_path` attribute from the control tag
+        logger.debug(f"### Loading model from path: {control.attr.get("model_path")}")
+
         model_path = (
             ALLOW_CUSTOM_MODEL_PATH and control.attr.get("model_path")
         ) or cls.model_path

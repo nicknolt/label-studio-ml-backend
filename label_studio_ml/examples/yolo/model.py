@@ -108,6 +108,10 @@ class YOLO(LabelStudioMLBase):
         )
         control_models = self.detect_control_models()
 
+        logger.info(
+            "### COUCOU CUSTOM LOGS"
+        )
+
         predictions = []
         for task in tasks:
 

@@ -33,6 +33,8 @@ class RectangleLabelsModel(ControlModel):
         return control.tag == cls.type
 
     def predict_regions(self, path) -> List[Dict]:
+
+        logger.debug("### predict region")
         results = self.model.predict(path)
         self.debug_plot(results[0].plot())
 
